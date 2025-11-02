@@ -8,8 +8,8 @@
 
 1. Python basics (quick refresher)
 2. Working with files and the filesystem
-4. Python data structures useful for data science
-5. Scientific Python ecosystem (NumPy, Pandas, Matplotlib)
+3. Python data structures useful for data science
+4. Scientific Python ecosystem (NumPy, Pandas, Matplotlib)
 6. Loading and inspecting data (EDA)
 7. Data cleaning and preprocessing
 8. Data visualization — from basic to informative plots
@@ -21,42 +21,10 @@
 14. Best practices & tips for workshops
 15. Exercises and suggested next steps
 
----
-
-## 1 — Introduction and Setup
-
-**What you'll need:**
-
-* Python 3.8+ (Anaconda distribution recommended)
-* Recommended IDE: VSCode, JupyterLab / Jupyter Notebook, or Google Colab
-* Install packages (use conda or pip):
-
-```bash
-# with conda
-conda create -n dsworkshop python=3.10 -y
-conda activate dsworkshop
-conda install numpy pandas matplotlib scikit-learn seaborn jupyter -y
-# optional: imbalanced-learn if you plan to use SMOTE
-pip install imbalanced-learn
-
-# or with pip
-python -m venv dsworkshop
-source dsworkshop/bin/activate  # linux/mac
-dsworkshop\Scripts\activate   # windows
-pip install numpy pandas matplotlib seaborn scikit-learn jupyter imbalanced-learn
-```
-
-Start Jupyter Notebook / Lab:
-
-```bash
-jupyter notebook
-# or
-jupyter lab
-```
 
 ---
 
-## 2 — Python basics (quick refresher)
+## 1 — Python basics (quick refresher)
 
 ```python
 # print, variables, types
@@ -93,7 +61,7 @@ print(squares)
 
 ---
 
-## 3 — Working with files and the filesystem
+## 2 — Working with files and the filesystem
 
 ```python
 # list files
@@ -108,7 +76,7 @@ print(s[:200])
 
 ---
 
-## 4 — Python data structures useful for DS
+## 3 — Python data structures useful for DS
 
 * `list`, `tuple`, `set`, `dict`
 * `numpy.ndarray` for numeric arrays
