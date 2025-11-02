@@ -6,9 +6,8 @@
 
 ## Table of Contents
 
-1. Introduction and Setup
-2. Python basics (quick refresher)
-3. Working with files and the filesystem
+1. Python basics (quick refresher)
+2. Working with files and the filesystem
 4. Python data structures useful for data science
 5. Scientific Python ecosystem (NumPy, Pandas, Matplotlib)
 6. Loading and inspecting data (EDA)
