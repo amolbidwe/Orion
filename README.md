@@ -94,7 +94,7 @@ print(df.head())
 
 ---
 
-## 5 — Scientific Python ecosystem
+## 4 — Scientific Python ecosystem
 
 * **NumPy** — fast numeric arrays
 * **Pandas** — data frames, read/write CSV, groupby, joins
@@ -115,7 +115,7 @@ from sklearn.preprocessing import StandardScaler
 
 ---
 
-## 6 — Loading and inspecting data (EDA)
+## 5 — Loading and inspecting data (EDA)
 
 **Load CSV**
 
@@ -142,7 +142,7 @@ df.isna().sum().sort_values(ascending=False).head(20)
 
 ---
 
-## 7 — Data cleaning and preprocessing
+## 6 — Data cleaning and preprocessing
 
 **Common steps**
 
@@ -183,7 +183,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 ---
 
-## 8 — Data visualization
+## 7 — Data visualization
 
 **Quick plotting rules**
 
@@ -221,7 +221,7 @@ plt.show()
 
 ---
 
-## 9 — Feature engineering & selection
+## 8 — Feature engineering & selection
 
 * Create domain-specific features (ratios, differences)
 * Remove features with low variance
@@ -241,7 +241,7 @@ sel.fit(df.select_dtypes(include=['number']))
 
 ---
 
-## 10 — Classical ML workflow (repeatable)
+## 9 — Classical ML workflow (repeatable)
 
 1. Problem formulation (classification/regression)
 2. Data cleaning & split
@@ -276,7 +276,7 @@ y_pred = pipe.predict(X_test)
 
 ---
 
-## 11 — Model evaluation & metrics
+## 10 — Model evaluation & metrics
 
 **Classification metrics**
 
@@ -301,7 +301,7 @@ plt.show()
 
 ---
 
-## 12 — Model selection & hyperparameter tuning
+## 11 — Model selection & hyperparameter tuning
 
 * Use `GridSearchCV` or `RandomizedSearchCV` with cross-validation
 * Build pipelines to avoid data leakage
@@ -323,7 +323,7 @@ print(grid.best_params_)
 
 ---
 
-## 13 — End-to-end example (SDSS dataset)
+## 12 — End-to-end example (SDSS dataset)
 
 This section shows a compact, ready-to-run notebook workflow that follows everything from loading to evaluation.
 
@@ -394,7 +394,7 @@ print('RF acc', (y_rf==y_test).mean())
 
 ---
 
-## 14 — Best practices & tips
+## 13 — Best practices & tips
 
 * Always check class balance and missing values before training.
 * Use stratified splits for classification problems.
@@ -405,7 +405,7 @@ print('RF acc', (y_rf==y_test).mean())
 
 ---
 
-## 15 — Exercises and next steps
+## 14 — Exercises and next steps
 
 1. Re-run the notebook but intentionally drop one band (e.g. `u`) — how does model performance change?
 2. Try SMOTE to oversample minority classes and compare F1-scores.
