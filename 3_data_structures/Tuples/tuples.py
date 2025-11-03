@@ -18,10 +18,6 @@ print(l[len(l)-3])
 print(l[5-3])
 print(l[2])
 
-if 7 in l:
-    print("Yes")
-else:
-    print("No")
 
 if "Vishwa" in l:
     print("Yes")
