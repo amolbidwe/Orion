@@ -1,17 +1,15 @@
-# sets
-# Sets are unorderd collection of data items. They store multiple items in a single variable>
-# Set items are seprated by commas and enclosed within curly brackets{}. Sets are unchangable.
+# repeated stars in multiple observation runs
+stars = {"Sirius", "Vega", "Sirius", "Betelgeuse"}
 
-s = {2, 4, 2, 6}
-print(s) 
+print("Unique targets:", stars)
 
-info = {"Vishwa", 19, False, 5.9, 45}
-print(info)
-# Items of the set occur in random order and hence they cannot be accessed using index number
+# add new target
+stars.add("Rigel")
 
-# empty set
-random = set()
-print(type(random))
+# detector names on a telescope
+detectors_A = {"UV", "Optical", "IR"}
+detectors_B = {"IR", "Gamma", "X-ray"}
 
-for value in info:
-    print(value)
+print("Union:", detectors_A | detectors_B)        # all bands
+print("Intersection:", detectors_A & detectors_B) # shared band
+print("Unique to A:", detectors_A - detectors_B)
