@@ -1,20 +1,13 @@
-#tuple 
-# Tuples are unchangeable
-# It is the ordered collection of data items. They store multiple items in a single variable. Tuples are separated by comma and enclosed within round bracket. 
-tup = (1, 5, 6, "Violet", 741)
-print(type(tup), tup)
-print(tup[0])
-print(tup[1])
-print(tup[2])
-print(tup[3])
+# RA and DEC of Crab Pulsar (in degrees)
+crab_coords = (83.6331, 22.0145)
 
-if 741 in tup:
-    print("Yes 741 is present in this tuple")
-else:
-    print("342 is not present in tuple")
-# Here we can do slicing and after slicing new tuple is formed as tuple is unchangeable.
+ra, dec = crab_coords
+print("RA:", ra, "DEC:", dec)
 
-tup2 = tup[1 : 4]
-print(tup2)
-tup3 = tup[1 : 5 : 2]
-print(tup3)
+# tuple of spectral bands observed
+bands = ("X-ray", "Radio", "Gamma-ray")
+print("Bands observed:", bands)
+
+# single-element tuple for catalog ID
+catalog_id = ("PSR J0534+2200",)
+print(type(catalog_id))
